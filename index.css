@@ -50,6 +50,37 @@ form {
 
 #userInformation {
     background-color: white;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+h2 {
+    width: 100%;
+    margin: 0;
+}
+
+h3 {
+    margin-top: 1%;
+    font-weight: normal;
+}
+
+.inputWrapper {
+    width: 50%;
+}
+
+.inputWrapper input {
+    border-color: gray;
+    border-style: solid;
+    border-radius: 7px;
+    border-width: 2%;
+}
+
+input:not(.unfilled):invalid {
+    border-color: red;
+}
+
+.inputWrapper label{
+    display:block;
 }
 
 h1 {
@@ -59,3 +90,7 @@ h1 {
 p {
     margin-left: 3%;
 }
+
+.required:after {
+    content:" *";
+  }

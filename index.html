@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up Form</title>
+    <script src="index.js" defer></script>
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="index.css">
     <!--custom font GidolinyaRegular-->
@@ -20,29 +21,30 @@
         <h1>You know you <em>need</em> to.</h1>
         <fieldset id="userInformation">
             <h2>Let's do this!</h2>
-            <div>
-                <label for="firstName">FIRST NAME</label>
-                <input type="text" id="firstName" name="firstName">
+            <h3>All elements marked with an asterik (*) are required.</h3>
+            <div class="inputWrapper">
+                <label for="firstName" class="required">FIRST NAME</label>
+                <input type="text" class="unfilled" id="firstName" name="firstName" placeholder="John" required>
             </div>
-            <div>
-                <label for="lastName">LAST NAME</label>
-                <input type="text" id="lastName" name="lastName">
+            <div class="inputWrapper">
+                <label for="lastName" class="required">LAST NAME</label>
+                <input type="text" class="unfilled" id="lastName" name="lastName" placeholder="Doe" required>
             </div>
-            <div>
-                <label for="email">EMAIL</label>
-                <input type="email" id="email" name="email">
+            <div class="inputWrapper">
+                <label for="email" class="required">EMAIL</label>
+                <input type="email" class="unfilled" id="email" name="email" pattern="/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/" placeholder="john_doe@fakesite.com" required>
             </div>
-            <div>
-                <label for="phoneNumber">PHONE NUMBER</label>
-                <input type="number" id="phoneNumber" name="phoneNumber">
+            <div class="inputWrapper">
+                <label for="phoneNumber" class="required">PHONE NUMBER</label>
+                <input type="tel" class="unfilled" id="phoneNumber" name="phoneNumber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-867-5309" required>
             </div>
-            <div>
-                <label for="password">PASSWORD</label>
-                <input type="password" id="password" name="password">
+            <div class="inputWrapper">
+                <label for="password" class="required">PASSWORD</label>
+                <input type="password" class="unfilled" id="password" name="password" required>
             </div>
-            <div>
-                <label for="passwordConfirm">CONFIRM PASSWORD</label>
-                <input type="password" id="passwordConfirm" name="passwordConfirm">
+            <div class="inputWrapper">
+                <label for="passwordConfirm" class="required">CONFIRM PASSWORD</label>
+                <input type="password" class="unfilled" id="passwordConfirm" name="passwordConfirm" required>
             </div>
         </fieldset>
         <input type="submit"  id="submitButton" value="Create Account">
