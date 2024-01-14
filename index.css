@@ -1,0 +1,38 @@
+body {
+    display: flex;
+    flex-flow: row nowrap;
+    height: 100vh;
+}
+
+#image-sidebar {
+    display: inline;
+    width: 40%;
+}
+
+#backgroundImageCredit {
+    position: absolute;
+    bottom: -2%;
+    left: 0%;
+    width: 40%;
+    height: 5%;
+    color: white;
+    text-align: center;
+}
+
+#backgroundImage {
+    width: 100%;
+    height: 100%;
+}
+
+#logo {
+    position: absolute;
+    width: 20%;
+    height: 20%;
+    top: 70%;
+    left: 10%;
+
+}
+
+form {
+    width: 60%;
+}
