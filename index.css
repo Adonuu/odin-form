@@ -30,7 +30,7 @@ body {
 #logo {
     position: absolute;
     width: 40%;
-    height: 30%;
+    height: 200px;
     top: 20%;
     left: 0%;
     background-color: black;
@@ -39,7 +39,7 @@ body {
 
 #logo img {
     float:left;
-    width: 50%;
+    width: 200px;
     height: 100%;
     margin-left: 5%;
 }
@@ -48,7 +48,7 @@ body {
     font-family: 'GidolinyaRegular','Courier New', Courier, monospace;
     color:white;
     font-size: 3rem;
-    margin-top: 25%;
+    margin-top: 75px;
     text-align: center;
 }
 
@@ -82,6 +82,7 @@ h2 {
 h3 {
     margin-top: 1%;
     font-weight: normal;
+    width: 100%;
 }
 
 .inputWrapper {
