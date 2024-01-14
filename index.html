@@ -5,8 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up Form</title>
     <link rel="stylesheet" href="index.css">
+    <!--custom font GidolinyaRegular-->
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/gidole-regular" type="text/css"/>
 </head>
 <body>
-    
+    <div id="image-sidebar">
+        <img src="image_sidebar.jpg" alt="" id="backgroundImage">
+        <img src="odin-lined.png" alt="" id="logo">
+        <p>Photo by <a href="https://unsplash.com/@rickpsd?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Henrique Ferreira</a> on <a href="https://unsplash.com/photos/a-mountain-range-covered-in-snow-with-mountains-in-the-background-9h_TdbJ9Zwc?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></p>
+    </div>
+    <form action="/createAccount" method="post" id="signUpForm">
+        <h1>This is the greatest fake online service. You need this in order to realize your deepest dreams. Sign up <em>now</em> to get started.</h1>
+        <h1>You know you <em>need</em> to.</h1>
+        <fieldset id="userInformation">
+            <h2>Let's do this!</h2>
+            <label for="firstName">FIRST NAME</label>
+            <input type="text" id="firstName" name="firstName">
+            <label for="lastName">LAST NAME</label>
+            <input type="text" id="lastName" name="lastName">
+            <label for="email">EMAIL</label>
+            <input type="email" id="email" name="email">
+            <label for="phoneNumber">PHONE NUMBER</label>
+            <input type="number" id="phoneNumber" name="phoneNumber">
+            <label for="password">PASSWORD</label>
+            <input type="password" id="password" name="password">
+            <label for="passwordConfirm">CONFIRM PASSWORD</label>
+            <input type="password" id="passwordConfirm" name="passwordConfirm">
+        </fieldset>
+        <fieldset id="submitInformation">
+            <input type="submit" value="Create Account">
+            <p>Already have an account? <a>Log in</a></p>
+        </fieldset>
+    </form>
 </body>
 </html>
