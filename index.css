@@ -11,10 +11,10 @@ body {
 
 #backgroundImageCredit {
     position: absolute;
-    bottom: -2%;
+    bottom: 5%;
     left: 0%;
     width: 40%;
-    height: 5%;
+    height: 2%;
     color: white;
     text-align: center;
 }
@@ -30,9 +30,32 @@ body {
     height: 30%;
     top: 20%;
     left: 10%;
-
 }
 
 form {
     width: 60%;
+    height: 100vh;
+    background-color: lightgray;
+}
+
+#submitButton {
+    margin-left: 3%;
+    margin-top: 2%;
+    height: 5vh;
+    color: white;
+    background-color: #57b6bb;
+    border-radius: 7px;
+    border-width: 0px;
+}
+
+#userInformation {
+    background-color: white;
+}
+
+h1 {
+    margin: 3%;
+}
+
+p {
+    margin-left: 3%;
 }

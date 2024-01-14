@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up Form</title>
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="index.css">
     <!--custom font GidolinyaRegular-->
     <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/gidole-regular" type="text/css"/>
@@ -19,23 +20,33 @@
         <h1>You know you <em>need</em> to.</h1>
         <fieldset id="userInformation">
             <h2>Let's do this!</h2>
-            <label for="firstName">FIRST NAME</label>
-            <input type="text" id="firstName" name="firstName">
-            <label for="lastName">LAST NAME</label>
-            <input type="text" id="lastName" name="lastName">
-            <label for="email">EMAIL</label>
-            <input type="email" id="email" name="email">
-            <label for="phoneNumber">PHONE NUMBER</label>
-            <input type="number" id="phoneNumber" name="phoneNumber">
-            <label for="password">PASSWORD</label>
-            <input type="password" id="password" name="password">
-            <label for="passwordConfirm">CONFIRM PASSWORD</label>
-            <input type="password" id="passwordConfirm" name="passwordConfirm">
+            <div>
+                <label for="firstName">FIRST NAME</label>
+                <input type="text" id="firstName" name="firstName">
+            </div>
+            <div>
+                <label for="lastName">LAST NAME</label>
+                <input type="text" id="lastName" name="lastName">
+            </div>
+            <div>
+                <label for="email">EMAIL</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div>
+                <label for="phoneNumber">PHONE NUMBER</label>
+                <input type="number" id="phoneNumber" name="phoneNumber">
+            </div>
+            <div>
+                <label for="password">PASSWORD</label>
+                <input type="password" id="password" name="password">
+            </div>
+            <div>
+                <label for="passwordConfirm">CONFIRM PASSWORD</label>
+                <input type="password" id="passwordConfirm" name="passwordConfirm">
+            </div>
         </fieldset>
-        <fieldset id="submitInformation">
-            <input type="submit" value="Create Account">
-            <p>Already have an account? <a>Log in</a></p>
-        </fieldset>
+        <input type="submit"  id="submitButton" value="Create Account">
+        <p>Already have an account? <a>Log in</a></p>
     </form>
 </body>
 </html>
